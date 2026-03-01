@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 280px;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .header h1 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f0f6fc;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .dot.inactive { background: #6e7681; }
+        .dot.active { background: #3fb950; box-shadow: 0 0 8px #3fb950; }
+        .dot.connecting { background: #d29922; box-shadow: 0 0 8px #d29922; animation: pulse 1.5s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .status {
+            font-size: 12px;
+            color: #8b949e;
+            margin-bottom: 16px;
+            min-height: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.3px;
+        }
+        .btn-activate {
+            background: linear-gradient(135deg, #238636, #2ea043);
+            color: #fff;
+        }
+        .btn-activate:hover { background: linear-gradient(135deg, #2ea043, #3fb950); }
+        .btn-stop {
+            background: linear-gradient(135deg, #da3633, #f85149);
+            color: #fff;
+        }
+        .btn-stop:hover { background: linear-gradient(135deg, #f85149, #ff7b72); }
+        .btn:active { transform: scale(0.97); }
+
+        .footer {
+            margin-top: 14px;
+            font-size: 10px;
+            color: #484f58;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="dot" id="dot"></div>
+        <h1>ThreadMind Bridge</h1>
+    </div>
+    <div class="status" id="status">Inactive</div>
+    <button class="btn btn-activate" id="toggleBtn">Activate</button>
+    <div class="footer">ws://127.0.0.1:9090</div>
+    <script src="popup.js"></script>
+</body>
+</html>
