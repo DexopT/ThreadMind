@@ -1,3 +1,5 @@
+![ThreadMind Banner](ThreadMind.png)
+
 # 🧠 ThreadMind: The Autonomous Intelligence Framework
 
 ThreadMind is a high-performance, modular AI agent framework built with TypeScript. Engineered for extreme reliability, deep technical integration, and autonomous project lifecycle management.
