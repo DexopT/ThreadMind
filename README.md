@@ -77,7 +77,7 @@ graph LR
 ### 🪟 Windows Setup (PowerShell)
 1. **Clone the Repo**:
    ```powershell
-   git clone https://github.com/your-username/ThreadMind.git
+   git clone https://github.com/DexopT/ThreadMind.git
    cd ThreadMind
    ```
 2. **Install Dependencies**:
@@ -97,7 +97,7 @@ graph LR
 ### 🐧 Linux / macOS Setup (Bash)
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/your-username/ThreadMind.git
+   git clone https://github.com/DexopT/ThreadMind.git
    cd ThreadMind
    ```
 2. **Install Dependencies**:
@@ -144,5 +144,7 @@ graph LR
 ```
 
 ---
+
+Contact Me At: https://t.me/k3xopt
 
 *ThreadMind: Secure. Reliable. Autonomous. Built for the future of engineering.*
