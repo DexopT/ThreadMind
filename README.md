@@ -1,4 +1,4 @@
-![ThreadMind Banner](ThreadMind.png)
+![ThreadMind Banner](Threadind.png)
 
 # ThreadMind: The Autonomous Intelligence Framework
 
